@@ -11,6 +11,17 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 0) do
+ActiveRecord::Schema.define(:version => 20140412235630) do
+
+  create_table "dishes", :force => true do |t|
+    t.string   "name"
+    t.string   "country"
+    t.integer  "long"
+    t.integer  "lat"
+    t.text     "description"
+    t.string   "image_url"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
 
 end
