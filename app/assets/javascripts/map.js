@@ -1,4 +1,5 @@
 app.map = {
+
   initialize: function() {
     var mapOptions = {
       center: new google.maps.LatLng(30, -20),
@@ -6,4 +7,5 @@ app.map = {
     };
     var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
   }
+
 };
