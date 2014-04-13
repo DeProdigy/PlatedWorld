@@ -1,0 +1,41 @@
+app.visual = {
+
+  initialize: function() {
+    var mapOptions = {
+      center: new google.maps.LatLng(20, -20),
+      zoom: 3
+    };
+    // debugger;
+    app.visual.map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+  },
+
+  drawPoints: function() {
+    geocoder = new google.maps.Geocoder();
+
+    function geoLocate(country) {
+      geocoder.geocode( { 'address': country }, function(results, status) {
+
+        if (status == google.maps.GeocoderStatus.OK) {
+          //center the map over the last marker
+         // app.visual.map.setCenter(results[0].geometry.location);
+         var marker = new google.maps.Marker({
+           map: app.visual.map,
+           position: results[0].geometry.location
+         });
+
+        } else {
+          alert("Geocode was not successful for the following reason: " + status);
+        }
+
+      });
+    }
+
+    var information = app.storage.information;
+
+    for (var i = 0; i < information.length; i++) {
+      geoLocate(information[i].country);
+    }
+  }
+
+};
+

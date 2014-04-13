@@ -13,7 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require app
-//= require map
+//= require visual
 //= require storage
 //= require controller
 
