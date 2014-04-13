@@ -7,5 +7,4 @@ $(document).ready(function($) {
   //after call drawPoints function
   app.storage.getDishes();
 
-
 });
