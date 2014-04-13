@@ -14,6 +14,10 @@ $(document).ready(function($) {
 
 function getDishes() {
   $.getJSON('/dishes', function(result) {
-    console.log(result);
+    drawMarkers(result);
   });
+}
+
+function drawMarkers(result) {
+  console.log(result);
 }
