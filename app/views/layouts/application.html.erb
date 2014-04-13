@@ -7,7 +7,7 @@
   <%= csrf_meta_tags %>
   <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
   <script type="text/javascript"
-  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBk5_bCUYal3-eRocjMDaesK5mEXCcOvZM&sensor=true">
+  src="https://maps.googleapis.com/maps/api/js?key=<%=ENV['GOOGLE_API_KEY'] %>&sensor=true">
   </script>
 </head>
 <body>
@@ -16,3 +16,4 @@
 
 </body>
 </html>
+
