@@ -56,9 +56,8 @@ app.visual = {
     var dish = app.storage.information[id];
     $('.layover').removeClass('hidden');
     $card = $('.card');
-    console.log(dish);
+    $card.css('background-image', 'url(' + dish.image_url + ')');
     $card.html('<h2 class="name">' + dish.name + '</h2>' +
-              '<img class="image" src="' + dish.image_url + '">' +
               '<p class="description">' + dish.description + '</p>');
   }
 

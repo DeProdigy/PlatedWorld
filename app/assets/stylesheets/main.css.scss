@@ -1,4 +1,5 @@
 @import "saffron/saffron";
+@import "fonts";
 
 html {
   height: 100%;
@@ -21,8 +22,8 @@ body {
   bottom: 0;
   left: 0;
   height: 125px;
-  margin-left: 10px;
-  margin-bottom: 10px;
+  margin-left: 5px;
+  margin-bottom: 5px;
 }
 
 .hidden {
@@ -40,17 +41,20 @@ body {
 
 .card {
   position: absolute;
-  height: 70%;
-  width: 70%;
+  height: 60%;
+  width: 60%;
   top: 18%;
   left: 15%;
-  background: white;
-  padding: 20px;
+  padding: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #ECF0F1;
 }
 
 .name {
-  margin-left: 2%;
-  margin-bottom: 5%;
+  font-family: 'IM Fell Great Primer', serif;
+  font-size: 2.5em;
 }
 
 .image {
@@ -60,8 +64,11 @@ body {
 }
 
 .description {
-  margin-left: 2%;
+  margin-top: -1%;
   height: 60%;
-  width: 50%;
+  width: 60%;
   float: left;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.3em;
+  line-height: 130%;
 }
