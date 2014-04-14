@@ -49,9 +49,12 @@ app.visual = {
 
   showCard: function(id) {
     var dish = app.storage.information[id];
-    var $layover = $('.layover');
-    $layover.addClass('.slide-in');
-    $layover.removeClass('hidden');
+    $('.layover').removeClass('hidden');
+    $card = $('.card');
+    console.log(dish);
+    $card.html('<h2 class="name">' + dish.name + '</h2>' +
+              '<img class="image" src="' + dish.image_url + '">' +
+              '<p class="description">' + dish.description + '</p>');
   }
 
 };
