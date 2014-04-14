@@ -34,7 +34,23 @@ body {
   top: 18%;
   left: 15%;
   background: white;
+  padding: 20px;
 }
 
+.name {
+  margin-left: 2%;
+  margin-bottom: 5%;
+}
 
+.image {
+  height: 300px;
+  width: 400px;
+  float: left;
+}
 
+.description {
+  margin-left: 2%;
+  height: 60%;
+  width: 50%;
+  float: left;
+}
