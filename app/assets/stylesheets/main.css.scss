@@ -16,6 +16,15 @@ body {
   margin-left: -15%;
 }
 
+.logo {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 125px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
 .hidden {
   display: none;
 }
