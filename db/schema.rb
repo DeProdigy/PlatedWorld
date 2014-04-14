@@ -16,8 +16,6 @@ ActiveRecord::Schema.define(:version => 20140412235630) do
   create_table "dishes", :force => true do |t|
     t.string   "name"
     t.string   "country"
-    t.integer  "long"
-    t.integer  "lat"
     t.text     "description"
     t.string   "image_url"
     t.datetime "created_at",  :null => false

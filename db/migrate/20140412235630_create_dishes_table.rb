@@ -3,8 +3,6 @@ class CreateDishesTable < ActiveRecord::Migration
     create_table :dishes do |t|
       t.string :name
       t.string :country
-      t.integer :long
-      t.integer :lat
       t.text :description
       t.string :image_url
       t.timestamps
