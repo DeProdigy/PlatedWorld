@@ -35,6 +35,8 @@ app.visual = {
             map: app.visual.map,
             position: results[0].geometry.location,
             id: id,
+            icon: "http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=%E2%80%A2|F1F4F5",
+            animation: google.maps.Animation.DROP,
             draggable: false,
             raiseOnDrag: false,
             clickable: true,
