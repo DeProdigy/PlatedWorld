@@ -7,4 +7,11 @@ $(document).ready(function($) {
   //after call drawPoints function
   app.storage.getDishes();
 
+  $('.layover').on('click', function(event) {
+    event.stopPropagation();
+    if (event.target == this) {
+      $(this).addClass('hidden');
+    }
+  });
+
 });

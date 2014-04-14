@@ -48,7 +48,8 @@ app.visual = {
   },
 
   showCard: function(id) {
-    console.log(id);
+    var dish = app.storage.information[id];
+    $('.layover').removeClass('hidden');
   }
 
 };
