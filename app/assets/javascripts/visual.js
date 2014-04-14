@@ -1,9 +1,33 @@
 app.visual = {
 
   initialize: function() {
+    var styles = [
+      {
+        stylers: [
+          { hue: "#CE0000" },
+          { saturation: -40 }
+        ]
+      }
+      // ,{
+      //   featureType: "road",
+      //   elementType: "geometry",
+      //   stylers: [
+      //     { lightness: 50 },
+      //     { visibility: "simplified" }
+      //   ]
+      // },{
+      //   featureType: "road",
+      //   elementType: "labels",
+      //   stylers: [
+      //     { visibility: "off" }
+      //   ]
+      // }
+    ];
+
     var mapOptions = {
       center: new google.maps.LatLng(20, -20),
-      zoom: 3
+      zoom: 3,
+      styles: styles
     };
     // debugger;
     app.visual.map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
