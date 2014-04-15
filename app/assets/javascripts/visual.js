@@ -60,7 +60,7 @@ app.visual = {
 
     for (var i = 0; i < information.length; i++) {
       var img = new Image();
-      img = information[i].image_url;
+      img.src = information[i].image_url;
       console.log(img);
     }
   },
