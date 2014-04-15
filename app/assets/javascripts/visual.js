@@ -68,7 +68,7 @@ app.visual = {
     var dish = app.storage.information[id];
     $('.layover').removeClass('hidden');
     $card = $('.card');
-    $card.attr('id', id);
+    $card.attr('id', id + 1);
     $card.css('background-image', 'linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url(' + dish.image_url + ')');
     $card.html('<h2 class="name">' + dish.name + '</h2>' +
               '<p class="description">' + dish.description + '</p>' +
