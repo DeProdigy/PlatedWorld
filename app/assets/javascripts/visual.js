@@ -5,7 +5,7 @@ app.visual = {
     var styles = [{"featureType":"water","elementType":"geometry","stylers":[{"color":"#BCD4DF"}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#E94B35"}]},{"featureType":"poi","stylers":[{"color":"#E94B35"},{"lightness":-7}]},{"featureType":"road.highway","elementType":"geometry","stylers":[{"color":"#E94B35"},{"lightness":-28}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#E94B35"},{"visibility":"on"},{"lightness":-15}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#E94B35"},{"lightness":-18}]},{"elementType":"labels.text.fill","stylers":[{"color":"#2A3A42"}]},{"elementType":"labels.text.stroke","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#E94B35"},{"lightness":-34}]},{"featureType":"administrative","elementType":"geometry","stylers":[{"visibility":"on"},{"color":"#BCD4DF"},{"weight":0.8}]},{"featureType":"poi.park","stylers":[{"color":"#E94B35"}]},{"featureType":"road","elementType":"geometry.stroke","stylers":[{"color":"#BCD4DF"},{"weight":0.3},{"lightness":10}]}];
 
     var mapOptions = {
-      center: new google.maps.LatLng(25, -20),
+      center: new google.maps.LatLng(25, -15),
       zoom: 3,
       styles: styles
     };
