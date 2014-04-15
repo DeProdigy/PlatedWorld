@@ -33,7 +33,7 @@ body {
 .layover {
   height: 100%;
   width: 100%;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.8);
   position: fixed;
   top: 0;
   left: 0;
@@ -49,7 +49,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  color: #ECF0F1;
+  color: #F2F3F8;
 }
 
 .name {
@@ -65,8 +65,7 @@ body {
 
 .description {
   margin-top: -1%;
-  height: 60%;
-  width: 60%;
+  padding-right: 40%;
   float: left;
   font-family: 'Raleway', sans-serif;
   font-size: 1.3em;
