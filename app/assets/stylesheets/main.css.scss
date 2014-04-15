@@ -1,5 +1,6 @@
 @import "saffron/saffron";
 @import "fonts";
+@import "round-corners";
 
 html {
   height: 100%;
@@ -79,3 +80,21 @@ body {
   font-size: 1.3em;
   line-height: 130%;
 }
+
+.button {
+  @include round-corners();
+  margin-top: 1%;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  font-family: 'IM Fell Great Primer', serif;
+  font-size: 1.2em;
+  &:hover {
+    @include bounce();
+    background: rgba(255, 255, 255, 0.5);
+  }
+  &:focus {
+    outline: 0;
+  }
+}
+

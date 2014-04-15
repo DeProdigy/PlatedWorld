@@ -1,0 +1,22 @@
+$border-color: white;
+$radius: 3px;
+$solid: solid;
+
+@mixin round-corners {
+  border-bottom-color: $border-color;
+  border-bottom-left-radius: $radius;
+  border-bottom-right-radius: $radius;
+  border-bottom-style: $solid;
+  border-bottom-width: $radius;
+  border-left-color: $border-color;
+  border-left-style: $solid;
+  border-left-width: $radius;
+  border-right-color: $border-color;
+  border-right-style: $solid;
+  border-right-width: $radius;
+  border-top-color: $border-color;
+  border-top-left-radius: $radius;
+  border-top-right-radius: $radius;
+  border-top-style: $solid;
+  border-top-width: $radius;
+}
