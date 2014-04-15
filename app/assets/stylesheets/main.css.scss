@@ -24,16 +24,23 @@ body {
   height: 125px;
   margin-left: 5px;
   margin-bottom: 5px;
+  &:hover {
+    @include teeter();
+  }
 }
 
 .hidden {
   display: none;
 }
 
+.dropIn {
+  @include slideInRight();
+}
+
 .layover {
   height: 100%;
   width: 100%;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.85);
   position: fixed;
   top: 0;
   left: 0;
