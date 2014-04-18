@@ -84,7 +84,7 @@ body {
 .button {
   @include round-corners();
   margin-top: 1%;
-  padding: 15px;
+  padding: 10px 30px;
   background: rgba(255, 255, 255, 0.2);
   color: white;
   font-family: 'IM Fell Great Primer', serif;
