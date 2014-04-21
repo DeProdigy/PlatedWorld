@@ -90,7 +90,7 @@ body {
   font-family: 'IM Fell Great Primer', serif;
   font-size: 1.2em;
   &:hover {
-    @include bounce();
+    @include pulsate();
     background: rgba(255, 255, 255, 0.5);
   }
   &:focus {

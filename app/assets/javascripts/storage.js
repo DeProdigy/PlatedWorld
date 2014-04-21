@@ -2,7 +2,9 @@ app.storage = {
 
   information: [],
 
-  getDishes: function(){
+  likes: [],
+
+  getDishes: function() {
     $.getJSON('/dishes', function(result) {
       app.storage.information = result;
 
@@ -10,6 +12,27 @@ app.storage = {
       app.visual.drawPoints();
 
     });
-  }
+  },
 
+  postLike: function(id) {
+    var dishId = parseInt(id);
+    var likesArray = this.likes;
+
+    if (likesArray.indexOf(dishId) != -1) {
+      console.log('already liked!');
+    } else {
+      console.log('just liked!');
+      likesArray.push(dishId);
+
+      $.ajax({
+        type: "POST",
+        url: "/likes",
+        data: { dishId: dishId}
+      }).done(function(result){
+        console.log(result.status);
+      });
+    }
+  }
 };
+
+

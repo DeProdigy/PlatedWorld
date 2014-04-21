@@ -15,4 +15,11 @@ $(document).ready(function($) {
     }
   });
 
+  $('.card').on('click', 'button', function(event) {
+    event.preventDefault();
+    // Submit like
+    var id = $(this).parent().attr('id');
+    app.storage.postLike(id);
+  });
+
 });
