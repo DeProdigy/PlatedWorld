@@ -9,6 +9,7 @@ $(document).ready(function($) {
 
   $('.layover').on('click', function(event) {
     event.stopPropagation();
+    // Close layover
     if (event.target == this) {
       $(this).addClass('hidden');
     }
